@@ -8,7 +8,7 @@ resource "aws_instance" "resource_one" {
   instance_type = "t2.micro"
   count = length(var.my_list)
   tags = {
-	Name = "server-${count.index}"
+	Name = "terra-${count.index}"
 }
 }
 variable "my_list" {
